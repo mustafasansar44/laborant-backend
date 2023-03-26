@@ -31,8 +31,8 @@ ben Postman için söyleyeceğim.)
 'Authorization' penceresine gelip 'Type' sekmesinden 'Bearer Token' i seçip sağ kısımdaki token kutusuna tokeni
 gönderdikten sonra isteklerinizi atabilirsiniz. 
 
-Aşağıdaki test-controller sınıfında da sınıfa göre getRequest atabileceğiniz endpointler mevcut api'yi geliştirirken
-test edeyim diye eklemiştim development sürecinde olduğu için öyle bıraktım.
+Aşağıdaki test-controller sınıfında da sınıfa göre getRequest atabileceğiniz endpointler mevcut api'yi 
+geliştirirken test edeyim diye eklemiştim development sürecinde olduğu için öyle bıraktım.
 
 '/rapor/delete', '/rapor/update' 
 endpointlerine istek atabilmek için Admin,
