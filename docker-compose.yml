@@ -1,0 +1,19 @@
+version: '3'
+services:
+  postgresql:
+    image: postgres:15.2
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 12345
+      POSTGRES_DB: test
+    restart: always
+
+  backend:
+    container_name: laborant_api
+    build: .
+    ports:
+      - "8080:8080"
+    depends_on:
+      - postgresql
