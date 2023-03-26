@@ -31,6 +31,11 @@ public class StartupConfig implements CommandLineRunner {
     @Override
     public void run(String... args) throws Exception {
 
+
+
+    }
+}
+/*
         userService.save(new UserSaveRequestDto("admin", "password", Role.ADMIN));
         userService.save(new UserSaveRequestDto("user", "password", Role.USER));
         LaborantSaveRequestDto laborantSaveRequestDto1 = new LaborantSaveRequestDto("Laborant1", "Soyad", "24132524231");
@@ -40,5 +45,4 @@ public class StartupConfig implements CommandLineRunner {
         laborantService.save(laborantSaveRequestDto2);
         laborantService.save(laborantSaveRequestDto3);
 
-    }
-}
+*/

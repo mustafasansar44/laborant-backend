@@ -33,9 +33,9 @@ public class SecurityConfig {
         return http
                 .cors().and().csrf().disable()
                 .authorizeHttpRequests(authorize -> authorize
-                        //.requestMatchers("/rapor/delete","/rapor/update", "/test/admin").hasAuthority("ADMIN")
-                        //.requestMatchers("/rapor/save", "/rapor/getRaporDetailsById/**", "/test/user").hasAnyAuthority("USER", "ADMIN")
-                        //.requestMatchers("/laborant/save").hasAnyAuthority("USER", "ADMIN")
+                        .requestMatchers("/rapor/delete","/rapor/update", "/test/admin").hasAuthority("ADMIN")
+                        .requestMatchers("/rapor/save", "/rapor/getRaporDetailsById/**", "/test/user").hasAnyAuthority("USER", "ADMIN")
+                        .requestMatchers("/laborant/save").hasAnyAuthority("USER", "ADMIN")
                         .anyRequest().permitAll()
                 )
                 .formLogin().disable()

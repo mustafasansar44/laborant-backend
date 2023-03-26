@@ -6,6 +6,7 @@ import jakarta.validation.constraints.Size;
 import lombok.*;
 import org.springframework.web.multipart.MultipartFile;
 
+import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 @Getter
@@ -21,7 +22,7 @@ public class RaporSaveRequestDto {
     @Size(min = 11, max = 11, message = "TC Kimlik numaranız 11 haneden oluşmalıdır!")
     private String hastaTC;
     private Tani tani;
-    private LocalDateTime raporVerilmeTarihi;
+    private LocalDate raporVerilmeTarihi;
     private String laborant_id;
     MultipartFile raporFotografi;
 }

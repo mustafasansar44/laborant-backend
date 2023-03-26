@@ -6,6 +6,7 @@ import jakarta.validation.constraints.Size;
 import lombok.*;
 import org.springframework.web.multipart.MultipartFile;
 
+import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 @Getter
@@ -22,6 +23,6 @@ public class RaporUpdateRequestDto {
     @NotBlank
     private Tani tani;
     @NotBlank
-    private LocalDateTime raporVerilmeTarihi;
+    private LocalDate raporVerilmeTarihi;
     MultipartFile raporFotografi;
 }

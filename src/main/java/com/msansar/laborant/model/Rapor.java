@@ -4,7 +4,9 @@ import jakarta.persistence.*;
 import lombok.*;
 import org.hibernate.annotations.GenericGenerator;
 
+import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.util.Date;
 import java.util.Objects;
 
 @Getter
@@ -23,14 +25,14 @@ public class Rapor {
     private String hastaTC;
     @Enumerated(EnumType.STRING)
     private Tani tani;
-    private LocalDateTime raporVerilmeTarihi = LocalDateTime.now();
+    private LocalDate raporVerilmeTarihi = LocalDate.now();
     private String raporFotografAdi;
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "laborant_id", nullable = false)
     private Laborant laborant;
 
-    public Rapor(String hastaAd, String hastaSoyad, String hastaTC, Tani tani, LocalDateTime raporVerilmeTarihi, String raporFotografAdi, Laborant laborant) {
+    public Rapor(String hastaAd, String hastaSoyad, String hastaTC, Tani tani, LocalDate raporVerilmeTarihi, String raporFotografAdi, Laborant laborant) {
         this.hastaAd = hastaAd;
         this.hastaSoyad = hastaSoyad;
         this.hastaTC = hastaTC;

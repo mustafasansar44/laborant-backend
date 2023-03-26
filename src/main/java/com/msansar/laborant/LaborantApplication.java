@@ -13,7 +13,6 @@ public class LaborantApplication {
 		SpringApplication.run(LaborantApplication.class, args);
 
 
-
 	}
 
 
