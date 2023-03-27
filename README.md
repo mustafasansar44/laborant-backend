@@ -3,7 +3,7 @@
 Tüm docker repository için: [Docker](https://hub.docker.com/repositories/mustafasansar44 "Docker Repositorylerim")
 ![](https://www.labnol.org/images/2008/convertpicture)
 
-Uygulamamın frontend'i için [](https://github.com/mustafasansar44/laborant-frontend)
+Uygulamamın frontend'i için [Laborant Frontend](https://github.com/mustafasansar44/laborant-frontend)
 
 ```
 Projemin çalışır hali için Docker'dan pull edebilirsiniz;
