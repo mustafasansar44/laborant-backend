@@ -6,7 +6,7 @@ Tüm docker repository için: [Docker](https://hub.docker.com/repositories/musta
 Uygulamamın frontend'i için [Laborant Frontend](https://github.com/mustafasansar44/laborant-frontend)
 
 ```
-Projemin çalışır hali için Docker'dan pull edebilirsiniz;
+Projemin image'i için pull edebilirsiniz;
 
 Merhaba, projemi çalıştırabilmek için PostgreSQL veritabanının yüklü olması gerekiyor. 
 (Postgres:15.2 kullandım port 5432)
